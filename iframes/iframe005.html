@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> segurança com Iframes</title>
+</head>
+<body>
+    <h1>meu site principal</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore quo, delectus fugiat voluptate quos et hic totam aliquam, ducimus eos molestiae? Molestiae, nobis. Nobis est totam eveniet rerum atque?</p>
+
+    <iframe src="formulario-teste/form.html" sandbox="sandbox" referrerpolicy="no-referrer" >
+        <p>Dispositivo incompativel.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum ullam culpa cumque, hic qui, debitis eligendi repudiandae, blanditiis sapiente perspiciatis! Delectus, dolor rerum enim excepturi possimus eos ratione nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quaerat pariatur, aperiam, dicta deleniti est excepturi repellendus possimus at voluptate quae ipsam debitis nulla? Nihil eaque adipisci ducimus non. Blanditiis!</p>
+
+    <!-- sandbox="sandbox" é um metódo de segurança para bloquear o roubo de informações. 100% de proteção
+
+        sandbox="allow-same-origin" permitir conteúdo de mesma origem
+
+        sandbox="allow-forms allow-scripts" permição de uso de formulários e scripts.
+    
+    referrerpolicy="no-referrer" metodo utilizado para; tudo que estiver dentro do iframe não irá colotar dados do usuário.-->
+    
+</body>
+</html>
