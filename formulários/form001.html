@@ -14,8 +14,20 @@
 <body>
     <h1>Meu primeiro formulário</h1>
 
-    <form autocomplete="off" action="cadastro.php">
-        <!-- atributo autocompleto=off desliga o completamento de nomes e senhas que ja estejam cadastrados -->
+    <form autocomplete="off" action="cadastro.php" method="post">
+        <!-- atributo autocompleto=off desliga o completamento de nomes e senhas que ja estejam cadastrados
+        
+        metodo = get > padrão  
+        mostra info na url
+        dados não sensiveis > sem muita importancia
+        até 3 mil bytes 
+        mais velocidade
+
+        metodo = post  
+        nao mostra informações na url (mas não deixa 100% seguro)
+        acima de 3 mil bytes
+        dados sensiveis
+        um pouco mais lento-->
 
         <p><label for="inome">nome:</label> 
             <input type="text" name="nome" id="inome"> </p>
