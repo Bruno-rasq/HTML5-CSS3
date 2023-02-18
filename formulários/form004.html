@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="nome completo">
+            </p>
+            <p>
+                <label for="imail">E-mail:</label>
+                <input type="email" name="email" id="imail" required placeholder="E-mail" autocomplete="email">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="tefe" id="itelefone" placeholder="(xx) xxxx-xxxx" required  autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$ ">
+
+                <!-- pattern > expressão de RegEx-->
+            </p>
+
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </fieldset>
+
+        
+    </form>
+    
+</body>
+</html>
