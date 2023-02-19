@@ -10,22 +10,25 @@
     <h1>exemplo de output</h1>
 
     <form action="cadastro.php" method="get" autocomplete="on">
-
-         <p>
-                <label for="inu1">Numero 1:</label>
-                <input type="number" name="num1" id="inu1" oninput="isoma.innerHTML = Number(inu1.value) + Number(inu2.value)">
-        </p>
-
-        <p>
+<fieldset>
+    <legend>Soma com output > javascript</legend>
     
-                <label for="inu2">Numero 2:</label>
-                <input type="number" name="num2" id="inu2" oninput="isoma.innerHTML = Number(inu1.value) + Number(inu2.value)">
-        </p>
-
-        <p>
-            <label for="isoma"> Soma:</label>
-            <output name="soma" id="isoma">0</output>
-        </p>
+             <p>
+                    <label for="inu1">Numero 1:</label>
+                    <input type="number" name="num1" id="inu1" oninput="isoma.innerHTML = Number(inu1.value) + Number(inu2.value)">
+            </p>
+    
+            <p>
+    
+                    <label for="inu2">Numero 2:</label>
+                    <input type="number" name="num2" id="inu2" oninput="isoma.innerHTML = Number(inu1.value) + Number(inu2.value)">
+            </p>
+    
+            <p>
+                <label for="isoma"> Soma:</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+</fieldset>
             
         
     </form>
