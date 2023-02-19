@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
 /* css para query paisagem com feature orientada para lanscape*/
+
+body{
+    background-image: url(../pasta-imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
