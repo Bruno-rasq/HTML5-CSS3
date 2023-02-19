@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <h1>Exemplos de formulários</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Color, range and file</legend>
+
+            <p>
+                <label for="icor"> Cor:</label>
+                <input type="color" name="cores" id="icor" value="#00FF00">
+            </p>
+
+            <p>
+                <label for="irange">nivel de satisfação:</label>
+                <input type="range" name="nivel" id="irange" min="1" max="5" value="2" >
+            </p>
+
+            <p>
+                <label for="ifoto"> adicionar uma imagem:</label>
+                <input type="file" name="foto" id="ifoto">
+
+                <!-- quando utilizados inputs de file, não se pode usar o medoto GET no mormulário-->
+            </p>
+
+        </fieldset>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </form>
+    
+</body>
+</html>
