@@ -27,6 +27,11 @@ grandes telas: acima de 1200px
         border: 2px solid black;
     }
 
+    main::after{
+        content: 'teste ';
+        text-decoration: overline;
+    }
+
     img#phone { display: none;}
 
     img#tablet { display: none;}
